@@ -1,0 +1,110 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+lightning_logs/
+
+# Data
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.csv
+*.tsv
+*.fasta
+*.fa
+*.faa
+*.gz
+*.zip
+*.tar
+
+# Models (large files)
+models/*.pt
+models/*.pth
+models/*.pkl
+models/*.h5
+!models/.gitkeep
+
+# Logs
+*.log
+logs/
+wandb/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+secrets.yaml
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Results
+results/
+outputs/
+figures/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Keep empty directories
+!.gitkeep
