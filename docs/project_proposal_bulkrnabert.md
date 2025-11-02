@@ -2,7 +2,7 @@
 
 **Course:** CS 598 DLH - Deep Learning for Healthcare
 **Student:** Luis E. Fernandez de la Vara
-**Date:** February 2025
+**Date:** November 2025
 **Base Paper:** BulkRNABert: Cancer prognosis from bulk RNA-seq based language models
 
 ---
