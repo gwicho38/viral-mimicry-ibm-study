@@ -172,14 +172,13 @@
 
 ---
 
-## Appendix: Timeline
+## Appendix: Timeline (4 Weeks)
 
 | Week | Tasks | Deliverables |
 |------|-------|--------------|
-| 1-2 | Data download, reproduce classification | 98% accuracy |
-| 3-4 | Survival analysis, Cox loss | C-index >0.70 |
-| 5-6 | Ablations (ordering, masking, size) | Results table |
-| 7 | Transfer learning on GEO cohorts | External C-index |
-| 8 | Explainability (attention, SHAP) | Gene heatmaps |
-| 9 | Analysis, statistical tests, figures | Draft report |
-| 10 | Final report, video, code docs | Submission |
+| 1 | Environment setup, data download (TCGA), use pre-trained model from HuggingFace, reproduce cancer classification | 98% accuracy validation |
+| 2 | Implement Cox loss, fine-tune survival model, validate reproduction (C-index), run 2 key ablations (gene ordering, masking ratio) | C-index >0.70, ablation results |
+| 3 | Transfer learning on 1 GEO cohort (GSE62254), attention visualization for top 3 cancer types, SHAP analysis | External validation, gene heatmaps |
+| 4 | Statistical analysis, create all figures, write final report, record presentation video, finalize code documentation | Complete submission package |
+
+**Note:** Using pre-trained BulkRNABert from HuggingFace eliminates 24-hour pre-training phase, making 4-week timeline feasible.

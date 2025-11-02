@@ -665,13 +665,16 @@ class BulkRNABert(nn.Module):
 
 | Week | Phase | Tasks | Deliverables |
 |------|-------|-------|--------------|
-| 1-2 | **Setup & Reproduction** | • Download TCGA/GTEx data<br>• Set up environment<br>• Reproduce cancer classification | • Preprocessed datasets<br>• Reproduction validation (98% accuracy) |
-| 3-4 | **Survival Analysis** | • Implement Cox loss<br>• Fine-tune survival model<br>• Reproduce C-index results | • Survival model checkpoint<br>• Kaplan-Meier curves |
-| 5-6 | **Ablation Studies** | • Gene ordering variants<br>• Pre-training dataset comparison<br>• Masking ratio experiments | • Ablation results table<br>• Training curves |
-| 7 | **Transfer Learning** | • Download GEO cohorts<br>• Apply batch correction<br>• Fine-tune on external data | • External validation C-index<br>• Domain adaptation analysis |
-| 8 | **Explainability** | • Extract attention weights<br>• Compute SHAP values<br>• Gene enrichment analysis | • Attention heatmaps<br>• Top prognostic genes list |
-| 9 | **Analysis & Writing** | • Statistical tests<br>• Create figures<br>• Draft report | • Draft manuscript (80% complete) |
-| 10 | **Finalization** | • Revise report<br>• Record presentation<br>• Finalize code documentation | • Final report PDF<br>• 5-min video<br>• GitHub repo |
+| 1 | **Setup & Reproduction** | • Environment setup, GPU access verification<br>• Download TCGA data (use preprocessed if available)<br>• Load pre-trained BulkRNABert from HuggingFace<br>• Fine-tune cancer classification task<br>• Validate reproduction results | • Preprocessed TCGA data<br>• Fine-tuned classification model<br>• Reproduction validation: 98% accuracy |
+| 2 | **Survival + Ablations** | • Implement Cox proportional hazards loss<br>• Fine-tune survival prediction model<br>• Validate C-index reproduction<br>• Run 2 priority ablations: gene ordering + masking ratio<br>• Generate survival curves (Kaplan-Meier) | • Survival model checkpoint<br>• C-index >0.70 validation<br>• Ablation results table<br>• Survival plots by risk tertiles |
+| 3 | **Transfer Learning + Explainability** | • Download GEO cohort (GSE62254 breast cancer)<br>• Fine-tune on external data with batch correction<br>• Extract attention weights for 3 cancer types (BRCA, LUAD, COAD)<br>• Compute SHAP values for top samples<br>• Gene enrichment analysis (compare to OncoKB) | • External validation C-index<br>• Attention heatmaps<br>• SHAP gene importance plots<br>• Enrichment test results |
+| 4 | **Analysis & Finalization** | • Statistical hypothesis testing (H1-H4)<br>• Create all figures for report (8 total)<br>• Write final report (8-10 pages)<br>• Record 5-minute presentation video<br>• Finalize code documentation and README<br>• Prepare submission package | • Final report PDF<br>• Presentation video<br>• Complete GitHub repo<br>• Code with documentation<br>• All figures and results |
+
+**Accelerated Timeline Notes:**
+- **Skip pre-training:** Use HuggingFace pre-trained model (saves 24 GPU hours)
+- **Focus on core extensions:** Prioritize transfer learning + explainability over all ablations
+- **Streamlined validation:** Test on 1 GEO cohort instead of 3
+- **Parallel execution:** Run ablations while waiting for model fine-tuning
 
 ---
 

@@ -316,17 +316,16 @@ python src/models/finetune_multitask.py \
     --loss-weights 1.0 0.5
 ```
 
-## Project Timeline
+## Project Timeline (4 Weeks - Accelerated)
 
 | Week | Phase | Tasks |
 |------|-------|-------|
-| 1-2 | Setup & Reproduction | Data download, environment setup, reproduce classification |
-| 3-4 | Survival Analysis | Implement Cox loss, reproduce survival results |
-| 5-6 | Ablation Studies | Gene ordering, masking ratios, model sizes |
-| 7 | Transfer Learning | External GEO cohorts, domain adaptation |
-| 8 | Explainability | Attention visualization, SHAP analysis |
-| 9 | Analysis & Writing | Statistical tests, figures, draft report |
-| 10 | Finalization | Final report, presentation video, code documentation |
+| 1 | Setup & Reproduction | Environment setup, use pre-trained model, reproduce classification (98% accuracy) |
+| 2 | Survival + Ablations | Cox loss implementation, survival model (C-index >0.70), 2 key ablations |
+| 3 | Transfer Learning + Explainability | GEO external validation, attention visualization, SHAP analysis |
+| 4 | Analysis & Finalization | Statistical tests, all figures, final report, presentation video |
+
+**Key to 4-week feasibility:** Using pre-trained BulkRNABert from HuggingFace (skips 24-hour pre-training), focusing on core extensions (transfer learning + explainability), streamlined validation (1 GEO cohort).
 
 ## Citation
 
